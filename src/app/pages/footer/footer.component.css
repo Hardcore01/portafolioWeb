@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #c9fef0;
+}
+
+.div-info{
+    background: linear-gradient(to bottom, #1b1621, #334046 );
+    border-radius: 10px;
+}
+.icono-datos{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.div-datos{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #10514a;
+}

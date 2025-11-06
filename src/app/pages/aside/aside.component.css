@@ -1,0 +1,122 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: antiquewhite;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.aside-container{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.aside-section-info{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-shadow: inset 0px 0px 10px 0px rgba(79, 78, 90, 0.75);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aside-section-contact{
+    display: grid;
+    gap: 10px;
+}
+.aside-section-contact h2{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.aside-contact-whatsapp a{
+    color: orange;
+}
+.aside-contact-whatsapp a:hover{
+    color: rgb(255, 255, 0);
+}
+.img-whatsapp{
+    transition: transform 0.5s ease;
+}
+.aside-contact-whatsapp a:hover + .img-whatsapp,
+.aside-contact-whatsapp:hover .img-whatsapp{
+    animation: girar 1s linear infinite;
+}
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.aside-container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.aside-section-info h3{
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.aside-contact-whatsapp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.aside-contact-whatsapp img{
+    width: 30px;
+    height: 30px;
+}
+.aside-contact-whatsapp a{
+    text-decoration: none;
+}
+
+.contact-item-phone img{
+    width: 30px;
+    height: 30px;
+}
+.aside-ul-contact li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.aside-ul-contact li img{
+    width: 30px;
+    height: 30px;
+}
+.aside-section-cv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.aside-section-cv h4{
+    text-align: center;
+}
+.btn-cv{
+    padding: 5px;
+    border: none;
+    background-color: #0747a1;
+    border-radius: 8px;
+    border: solid 1px #031d7a;
+}
+.btn-cv a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+

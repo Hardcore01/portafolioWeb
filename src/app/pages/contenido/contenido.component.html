@@ -1,0 +1,47 @@
+<div class="div-contenido">
+
+    <app-perfil id="perfil"></app-perfil>
+        <div class="container-fluid p-3 div-proyectos" id="proyectos">
+            <h2 class="text-center text-uppercase fw-bolder text-white">proyectos realizados</h2>
+        
+            <div *ngFor="let card of cards; let i = index " class="row g-4 justify-content-center mb-4" >
+                
+                <div class="col-12">
+
+                    <div class="div-cards p-3 d-flex flex-column flex-md-row" 
+                                [ngClass]="{ 'flex-md-row': i % 2 === 0, 'flex-md-row-reverse': i % 2 === 1 }">
+                    
+                        <div class="col-md-4" [ngClass]="{ 'order-md-1': i % 2 === 0, 'order-md-2': i % 2 === 1 }">
+                            <img class="img-fluid w-100 rounded card-img" [src]="card.imagen" [alt]="card.titulo">
+                        </div>
+
+                        <div class="col-md-8 p-2 ">
+                            
+                            <!--CONTENIDO DE CADA CARD-->
+                            <h5 class="fw-bold text-uppercase text-center card-text-color">{{ card.titulo }}</h5>
+                            <p>{{ card.descripcion }}</p>
+                            
+                            <div class=" gap-2 navigation">
+                                <img class="img-web" src="{{card.imgweb}}" alt="">
+                                <a class="text-decoration-none fst-italic link-text" href="{{card.web}} " target="_blank"> ir a la web</a>
+                            </div>
+                            <div class="gap-2 d-flex navigation">
+                                <img class="img-repo" src="{{card.imgrepo}}" alt="" >
+                                <a class="text-decoration-none fst-italic link-text" href="{{card.repo}} " target="_blank">ir al repositorio</a>
+                            </div>
+                            <div>
+                                <h5 class="text-center text-uppercase fst-italic fs-5 card-text-color ">tecnologias</h5>
+                                <ul class="list-unstyled ul-info">
+                                    <li *ngFor="let tech of card.tecnologias" class="fs-6">{{tech}}</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                <div class="col-12 col-md-6"  *ngIf="i % 2 ===0"> </div>
+            </div>
+        </div>  
+    </div>
+
+    <app-footer id="informacion"></app-footer>
+</div>

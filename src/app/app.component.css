@@ -1,0 +1,15 @@
+
+
+.app-container{
+    display: grid;
+    grid-template-rows: aurto 1fr;
+    height: 100vh;
+}
+app-nav-bar{
+    grid-row: 1 ;
+}
+app-main{
+    grid-row: 2 ;
+}
+
+

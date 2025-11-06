@@ -1,0 +1,32 @@
+
+<aside class="aside-container">
+    <section class="aside-section-info">
+        <img src="assets/imgs/perfil.jpeg" alt="">
+        <h3>hector nathan lopez lopez</h3>
+    </section>
+
+    <section class="aside-section-contact">
+        <h2>contactos</h2>
+        <div class="aside-contact-whatsapp">
+            <img src="assets/imgs/social.png" alt="" class="img-whatsapp">
+            <a href="https://wa.me/50235745952">contacto al whatsapp</a>
+        </div>
+        <ul *ngFor="let item of contactos" class="aside-ul-contact">
+            <li >
+                <img src="{{item.icono}}" alt="">
+                <span>{{item.info}}</span>
+
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="aside-section-cv">
+        <h4>Curriculum vitae</h4>
+        <button class="btn-cv"><a href="assets/file/CV-Nathan-Lopez.pdf" download >descargar cv</a></button>
+    </section>
+    
+</aside>
+
+
+
